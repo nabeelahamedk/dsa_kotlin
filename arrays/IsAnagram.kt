@@ -1,0 +1,5 @@
+fun isAnagram(s: String, t: String): Boolean {
+        if (s.length != t.length) return false
+
+        return s.groupingBy{ it }.eachCount() == t.groupingBy{ it }.eachCount()
+}
